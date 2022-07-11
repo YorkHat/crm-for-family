@@ -1,9 +1,10 @@
 import {FC} from 'react'
+import Header from './Components/Blocks/Header/Header'
 
 const App: FC = () => {
   return (
     <>
-      PROJECT
+      <Header/>
     </>
   )
 }

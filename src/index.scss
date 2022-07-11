@@ -1,3 +1,5 @@
+@import "scss/blocks/header";
+
 *,
 *:after,
 *:before {
@@ -8,4 +10,16 @@
 
 html {
   font-size: 10px;
+}
+
+body {
+  font-size: 1.8rem;
+}
+
+.container {
+  max-width: 120rem;
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
