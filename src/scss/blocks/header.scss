@@ -1,0 +1,19 @@
+.header {
+  height: 7rem;
+  padding: 2rem 0;
+  background-color: teal;
+
+  grid-area: header;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-profile {
+  min-width: 20rem;
+  display: flex;
+  justify-content: space-between;
+}
