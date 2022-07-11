@@ -1,4 +1,7 @@
 @import "scss/blocks/header";
+@import "scss/blocks/sidebar";
+
+@import "scss/vendor/variables";
 
 *,
 *:after,
@@ -22,4 +25,11 @@ body {
 
   margin: 0 auto;
   padding: 0 1.5rem;
+
+  color: $colo-white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
