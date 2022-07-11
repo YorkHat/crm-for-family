@@ -1,0 +1,45 @@
+@import "../vendor/mixins";
+@import "../vendor/variables";
+
+.sidebar {
+  @include setWidthHeight(20rem, 100%);
+  background-color: $color-black;
+
+  font-size: 2rem;
+  text-align: center;
+  color: $colo-white;
+  padding: 2rem 0;
+
+  // TODO: REFACTOR TO GRID
+  grid-area: sidebar;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.sidebar-list {
+  margin-top: 3rem;
+}
+
+.sidebar__image {
+  margin: 0 auto;
+}
+
+.sidebar__nickname {
+  font-size: 1.6rem;
+  margin-top: 1.3rem;
+}
+
+.sidebar-item {
+  margin: 2.5rem 0;
+
+  &:first-child {
+    margin: 0;
+  }
+}
+
+.sidebar__link:hover {
+  color: orange;
+}

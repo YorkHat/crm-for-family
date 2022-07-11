@@ -1,3 +1,7 @@
+@import "scss/vendor/variables";
+
+@import "scss/blocks/sidebar";
+
 *,
 *:after,
 *:before {
@@ -8,4 +12,14 @@
 
 html {
   font-size: 10px;
+}
+
+body {
+  font-size: 1.8rem;
+  color: $colo-white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
