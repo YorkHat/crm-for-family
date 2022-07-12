@@ -1,6 +1,7 @@
 @import "scss/blocks/header";
 @import "scss/blocks/sidebar";
 @import "scss/blocks/familyProfile";
+@import "scss/blocks/home";
 
 @import "scss/vendor/variables";
 
@@ -18,6 +19,16 @@ html {
 
 body {
   font-size: 1.8rem;
+  color: $colo-white;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 ul, li {
@@ -43,10 +54,6 @@ ul, li {
   padding: 0 1.5rem;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
 // TODO: мне не нравится что эти классы надо будет писать везде, придумай что-то
 .content {
   grid-area: content;

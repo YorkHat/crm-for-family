@@ -8,3 +8,8 @@ export interface IFamilyProfile {
   name: string
   online: string
 }
+
+export interface ITask {
+  id: number
+  task: string
+}
