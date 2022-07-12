@@ -1,5 +1,4 @@
-import {IFamilyProfile, ISidebarNav} from '../Types/types'
-import {ISidebarNav, ITask} from '../Types/types'
+import {IFamilyProfile, ISidebarNav, ITask} from '../Types/types'
 
 export const SidebarItems: ISidebarNav[] = [
   {id: Date.now(), title: 'Главная'},
@@ -19,5 +18,4 @@ export const TaskItems: ITask[] = [
   {id: Date.now(), task: 'Задача1'},
   {id: Date.now() + 1, task: 'Задача2'},
   {id: Date.now() + 3, task: 'Задача2'},
-
 ]
