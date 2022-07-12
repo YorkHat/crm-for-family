@@ -2,13 +2,18 @@ import {FC} from 'react'
 import {ISidebarNav} from '../../../Types/types'
 import ListUl from '../../Util/ListUl'
 import SidebarItem from './SidebarItem'
-import SidebarAvatar from './SidebarAvatar'
+import YhAvatar from '../../UI/YhAvatar/YhAvatar'
 import {SidebarItems} from '../../../Store/stores'
 
 const Sidebar: FC = () => {
   return (
     <nav className="sidebar">
-      <SidebarAvatar/>
+      <YhAvatar
+        name="nickname placeholder"
+        wrapperClasses="sidebar-avatar"
+        avatarClasses="sidebar__image"
+        nameClasses="sidebar__nickname"
+      />
       <ListUl
         items={SidebarItems}
         renderItem={(sidebarItem: ISidebarNav) => <SidebarItem sidebarItem={sidebarItem} key={sidebarItem.id}/>}

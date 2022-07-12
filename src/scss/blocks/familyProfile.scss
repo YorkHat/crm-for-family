@@ -1,21 +1,22 @@
-.family-profile-item, .family-profile-list {
+@import "../vendor/mixins";
+@import "../vendor/variables";
+
+.family-item,
+.family-list {
   padding: 2rem;
 }
 
-.family-profile-list, .family-profile-top,
-.family-profile-avatar, .family-profile-progressbar {
+.family-header,
+.family-progressbar {
+  @include justifyFlex(space-between);
+}
+
+.family-list {
   display: flex;
-}
-
-.family-profile-top, .family-profile-progressbar {
-  justify-content: space-between;
-}
-
-.family-profile-list {
   flex-direction: column;
 }
 
-.family-profile-item {
+.family-item {
   width: 100%;
   margin-top: 1rem;
   background-color: gainsboro;
@@ -25,20 +26,20 @@
   }
 }
 
-.family-profile-top {
+.family-header {
   margin-bottom: 3rem;
 }
 
-.family-profile-avatar {
+.family-avatar {
+  @include justifyFlex(left);
+  @include flexVerticalCenter();
   max-width: 40rem;
-  align-items: center;
-  justify-content: left;
 }
 
-.family-profile-avatar__title {
+.family-avatar__title {
   margin-left: 2rem;
 }
 
-.family-profile-progressbar {
+.family-progressbar {
   max-width: 30rem;
 }

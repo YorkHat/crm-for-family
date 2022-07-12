@@ -1,15 +1,15 @@
 import {FC} from 'react'
-import HomeProfile from './HomeProfile'
-import {Avatar} from '@mui/material'
+import YhAvatar from '../../UI/YhAvatar/YhAvatar'
 
 const HomeHeader: FC = () => {
   return (
-    <div className="container home-header">
-      <Avatar
-        alt="Avatar"
-        src="https://via.placeholder.com/150"
+    <div className="container">
+      <YhAvatar
+        name="Username"
+        role="Role"
+        wrapperClasses="home-header"
+        namesWrapperClasses="home-profile"
       />
-      <HomeProfile/>
     </div>
   )
 }

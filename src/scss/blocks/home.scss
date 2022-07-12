@@ -1,19 +1,14 @@
 @import "../vendor/mixins";
 @import "../vendor/variables";
 
-.home-header,
-.home-body {
-  display: flex;
-}
-
 .home {
-  background-color: #212121;
+  background-color: $color-blue-gray;
   height: 100vh;
   padding: 3rem 0;
 }
 
 .home-header {
-  align-items: center;
+  @include flexVerticalCenter();
 }
 
 .home-profile {
@@ -21,36 +16,36 @@
 }
 
 .home-body {
-  justify-content: space-between;
+  @include justifyFlex(space-between);
   margin-top: 5rem;
 }
 
 .home-tasks {
   padding: 0 1.5rem;
-  background-color: gray;
+  background-color: $color-lily;
   width: 45%;
 }
 
-.home-tasks__title {
+.home__title {
   font-size: 3rem;
   text-align: center;
 }
 
-.home-tasks-list {
+.home-list {
   margin-top: 2rem;
 }
 
-.home-tasks-item {
+.home-item {
   margin: 2rem 0;
   padding: 1rem;
 
   height: 4rem;
-  background-color: lightslategray;
+  background-color: $color-orange-dusty;
   cursor: pointer;
 
   transition: $common-transition;
 
   &:hover {
-    background-color: salmon;
+    background-color: $color-eggplant;
   }
 }
