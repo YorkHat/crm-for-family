@@ -1,7 +1,10 @@
+@import "../vendor/variables";
+
 .header {
   height: 7rem;
   padding: 2rem 0;
-  background-color: teal;
+  background: linear-gradient(to right, $color-purple-dark, $color-purple);
+  color: $color-white;
 
   grid-area: header;
 }

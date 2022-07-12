@@ -1,0 +1,44 @@
+.family-profile-item, .family-profile-list {
+  padding: 2rem;
+}
+
+.family-profile-list, .family-profile-top,
+.family-profile-avatar, .family-profile-progressbar {
+  display: flex;
+}
+
+.family-profile-top, .family-profile-progressbar {
+  justify-content: space-between;
+}
+
+.family-profile-list {
+  flex-direction: column;
+}
+
+.family-profile-item {
+  width: 100%;
+  margin-top: 1rem;
+  background-color: gainsboro;
+
+  &:first-child {
+    margin: 0;
+  }
+}
+
+.family-profile-top {
+  margin-bottom: 3rem;
+}
+
+.family-profile-avatar {
+  max-width: 40rem;
+  align-items: center;
+  justify-content: left;
+}
+
+.family-profile-avatar__title {
+  margin-left: 2rem;
+}
+
+.family-profile-progressbar {
+  max-width: 30rem;
+}

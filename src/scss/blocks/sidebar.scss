@@ -2,21 +2,16 @@
 @import "../vendor/variables";
 
 .sidebar {
-  @include setWidthHeight(20rem, 100%);
-  background-color: $color-black;
+  @include setWidthHeight(auto, 100%);
+  background: linear-gradient($color-purple-dark, $color-purple);
+  border-top: 0.5rem solid $color-purple-dark;
 
   font-size: 2rem;
   text-align: center;
-  color: $colo-white;
+  color: $color-white;
   padding: 2rem 0;
 
-  // TODO: REFACTOR TO GRID
   grid-area: sidebar;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
 }
 
 .sidebar-list {
@@ -33,13 +28,27 @@
 }
 
 .sidebar-item {
-  margin: 2.5rem 0;
+  padding: 2rem 0;
+  border-bottom: 1px solid $color-purple;
+  transition: 0.3s ease-in-out;
 
   &:first-child {
+    border-top: 1px solid $color-purple;
     margin: 0;
+  }
+
+  &:hover {
+    background-color: rgba($color-purple, 0.7);
   }
 }
 
+.sidebar__link {
+  width: 100%;
+  padding: 1rem;
+  color: $color-blue-lite;
+  transition: 0.3s ease-in-out;
+}
+
 .sidebar__link:hover {
-  color: orange;
+  color: $color-white;
 }
