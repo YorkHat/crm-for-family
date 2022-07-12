@@ -1,7 +1,7 @@
 import {FC} from 'react'
 import {IFamilyProfile} from '../../../Types/types'
-import FamilyAvatar from './FamilyAvatar'
 import FamilyProgressBar from './FamilyProgressBar'
+import YhAvatar from '../../UI/YhAvatar/YhAvatar'
 
 interface FamilyItemProps {
   familyItem: IFamilyProfile
@@ -9,9 +9,14 @@ interface FamilyItemProps {
 
 const FamilyItem: FC<FamilyItemProps> = (props) => {
   return (
-    <li className="family-profile-item">
-      <div className="family-profile-top">
-        <FamilyAvatar name={props.familyItem.name}/>
+    <li className="family-item">
+      <div className="family-header">
+        <YhAvatar
+          wrapperClasses="family-avatar"
+          avatarClasses="family__image"
+          nameClasses="family-avatar__title"
+          name={props.familyItem.name}
+        />
         <p>{props.familyItem.online}</p>
       </div>
       <FamilyProgressBar/>

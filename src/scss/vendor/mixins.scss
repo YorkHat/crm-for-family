@@ -2,3 +2,13 @@
   width: $width;
   height: $height;
 }
+
+@mixin justifyFlex($justify) {
+  display: flex;
+  justify-content: $justify;
+}
+
+@mixin flexVerticalCenter() {
+  display: flex;
+  align-items: center;
+}

@@ -1,12 +1,12 @@
 import {FC} from 'react'
-import HeaderTaskWrapper from './HeaderTaskWrapper'
+import HomeTaskWrapper from './HomeTaskWrapper'
 
 const HomeBody: FC = () => {
   return (
     <div className="container">
       <div className="home-body">
-        <HeaderTaskWrapper>Текущие задачи</HeaderTaskWrapper>
-        <HeaderTaskWrapper>Предстоящие задачи</HeaderTaskWrapper>
+        <HomeTaskWrapper>Текущие задачи</HomeTaskWrapper>
+        <HomeTaskWrapper>Предстоящие задачи</HomeTaskWrapper>
       </div>
     </div>
   )

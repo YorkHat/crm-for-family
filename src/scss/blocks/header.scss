@@ -1,8 +1,15 @@
 @import "../vendor/variables";
+@import "../vendor/mixins";
+
+.header-inner,
+.header-profile {
+  @include justifyFlex(space-between);
+}
 
 .header {
   height: 7rem;
   padding: 2rem 0;
+
   background: linear-gradient(to right, $color-purple-dark, $color-purple);
   color: $color-white;
 
@@ -10,13 +17,9 @@
 }
 
 .header-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flexVerticalCenter();
 }
 
 .header-profile {
   min-width: 20rem;
-  display: flex;
-  justify-content: space-between;
 }

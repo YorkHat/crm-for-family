@@ -8,10 +8,10 @@ const FamilyProfile: FC = () => {
   return (
     <div className="content">
       <ListUl
+        classNames="family-list"
         items={FamilyItems}
         renderItem={(familyItem: IFamilyProfile) =>
           <FamilyItem familyItem={familyItem} key={familyItem.id}/>}
-        classNames="family-profile-list"
       />
     </div>
   )

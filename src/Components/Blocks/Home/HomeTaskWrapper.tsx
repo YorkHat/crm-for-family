@@ -1,26 +1,26 @@
 import {FC, ReactNode} from 'react'
 import ListUl from '../../Util/ListUl'
-import HeaderTaskItem from './HeaderTaskItem'
+import HomeTaskItem from './HomeTaskItem'
 import {TaskItems} from '../../../Store/stores'
 import {ITask} from '../../../Types/types'
 
-interface HeaderTaskWrapperProps {
+interface HomeTaskWrapperProps {
   children: ReactNode
 }
 
-const HeaderTaskWrapper: FC<HeaderTaskWrapperProps> = (props) => {
+const HomeTaskWrapper: FC<HomeTaskWrapperProps> = (props) => {
   return (
     <div className="home-tasks">
-      <h2 className="home-tasks__title">
+      <h2 className="home__title">
         {props.children}
       </h2>
       <ListUl
         items={TaskItems}
-        renderItem={(task: ITask) => <HeaderTaskItem key={task.id} item={task}/>}
-        classNames="home-tasks-list"
+        renderItem={(task: ITask) => <HomeTaskItem key={task.id} item={task}/>}
+        classNames="home-list"
       />
     </div>
   )
 }
 
-export default HeaderTaskWrapper
+export default HomeTaskWrapper
