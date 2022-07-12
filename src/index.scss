@@ -1,5 +1,6 @@
 @import "scss/blocks/header";
 @import "scss/blocks/sidebar";
+@import "scss/blocks/home";
 
 @import "scss/vendor/variables";
 
@@ -17,6 +18,16 @@ html {
 
 body {
   font-size: 1.8rem;
+  color: $colo-white;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .container {
@@ -25,11 +36,4 @@ body {
 
   margin: 0 auto;
   padding: 0 1.5rem;
-
-  color: $colo-white;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
