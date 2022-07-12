@@ -1,5 +1,6 @@
 @import "scss/blocks/header";
 @import "scss/blocks/sidebar";
+@import "scss/blocks/familyProfile";
 @import "scss/blocks/home";
 
 @import "scss/vendor/variables";
@@ -30,10 +31,30 @@ a {
   color: inherit;
 }
 
+ul, li {
+  list-style-type: none;
+}
+
+.app-wrapper {
+  display: grid;
+  height: 100vh;
+
+  grid-template-columns: 1.2fr 6fr;
+  grid-template-rows: 7rem 6fr;
+  grid-template-areas:
+    "header header"
+    "sidebar content";
+}
+
 .container {
   max-width: 120rem;
   width: 100%;
 
   margin: 0 auto;
   padding: 0 1.5rem;
+}
+
+// TODO: мне не нравится что эти классы надо будет писать везде, придумай что-то
+.content {
+  grid-area: content;
 }
