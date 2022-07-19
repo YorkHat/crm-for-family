@@ -1,0 +1,16 @@
+@import "../vendor/variables";
+@import "../vendor/mixins";
+
+.circle {
+  @include setWidthHeight(10rem, 10rem);
+  @include justifyFlex(center);
+
+  padding: 2rem;
+  align-items: center;
+  border: 1rem solid red;
+  border-radius: 50%;
+}
+
+.circle__content {
+  font-size: 3rem;
+}
