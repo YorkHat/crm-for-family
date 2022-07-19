@@ -17,5 +17,5 @@ export const FamilyItems: IFamilyProfile[] = [
 export const TaskItems: ITask[] = [
   {id: Date.now(), task: 'Задача1'},
   {id: Date.now() + 1, task: 'Задача2'},
-  {id: Date.now() + 3, task: 'Задача2'},
+  {id: Date.now() + 2, task: 'Задача3'},
 ]
