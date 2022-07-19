@@ -1,8 +1,8 @@
 import {FC} from 'react'
 import {ITask} from '../../../Types/types'
+import {TaskItems} from '../../../Store/stores'
 import ListUl from '../../Util/ListUl'
 import NotesItem from './NotesItem'
-import {TaskItems} from '../../../Store/stores'
 
 const NotesBody: FC = () => {
   return (
