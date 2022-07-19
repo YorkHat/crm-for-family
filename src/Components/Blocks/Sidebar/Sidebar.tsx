@@ -15,9 +15,10 @@ const Sidebar: FC = () => {
         nameClasses="sidebar__nickname"
       />
       <ListUl
-        items={SidebarItems}
-        renderItem={(sidebarItem: ISidebarNav) => <SidebarItem sidebarItem={sidebarItem} key={sidebarItem.id}/>}
         classNames="sidebar-list"
+        items={SidebarItems}
+        renderItem={(sidebarItem: ISidebarNav) =>
+          <SidebarItem sidebarItem={sidebarItem} key={sidebarItem.id}/>}
       />
     </nav>
   )

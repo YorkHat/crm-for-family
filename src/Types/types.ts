@@ -1,3 +1,5 @@
+import {Colors} from './enums'
+
 export interface ISidebarNav {
   id: number
   title: string
@@ -12,4 +14,11 @@ export interface IFamilyProfile {
 export interface ITask {
   id: number
   task: string
+}
+
+export interface IStatisticsItem {
+  id: number
+  number: number
+  title: string
+  color: Colors
 }
