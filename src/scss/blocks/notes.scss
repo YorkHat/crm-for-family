@@ -1,0 +1,46 @@
+@import "../vendor/mixins";
+@import "../vendor/variables";
+
+.notes {
+  padding: 5rem 0;
+}
+
+.notes-header {
+  @include justifyFlex(space-between);
+}
+
+.notes__btn {
+  font-size: 1.3rem !important;
+  border-radius: 1rem !important;
+}
+
+.notes__input {
+  width: 80%;
+
+  * {
+    font-size: inherit !important;
+  }
+}
+
+.notes-body {
+  margin-top: 5rem;
+}
+
+.notes-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.notes-item {
+  flex: 0 1 35rem;
+  margin: 1rem 0.25em;
+}
+
+.notes-card {
+  min-width: 27.5rem;
+  height: 20rem;
+}
+
+.notes__typography {
+  font-size: 2rem !important;
+}
