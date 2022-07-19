@@ -1,13 +1,13 @@
 import {FC} from 'react'
-import HeaderProfile from './HeaderProfile'
+import HeaderInner from './HeaderInner'
+import Wrapper from '../../Util/Wrapper'
 
 const Header: FC = () => {
   return (
     <header className="header">
-      <div className="container header-inner">
-        <p>Logo</p>
-        <HeaderProfile/>
-      </div>
+      <Wrapper>
+        <HeaderInner/>
+      </Wrapper>
     </header>
   )
 }
