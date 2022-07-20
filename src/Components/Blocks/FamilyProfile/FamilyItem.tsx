@@ -1,5 +1,5 @@
-import {FC} from 'react'
-import {IFamilyProfile} from '../../../Types/types'
+import { FC } from 'react'
+import { IFamilyProfile } from '../../../Types/types'
 import FamilyProgressBar from './FamilyProgressBar'
 import YhAvatar from '../../UI/YhAvatar/YhAvatar'
 

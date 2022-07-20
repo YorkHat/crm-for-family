@@ -1,7 +1,7 @@
-import React from 'react'
-import {Button, TextField} from '@mui/material'
+import { FC } from 'react'
+import { Button, TextField } from '@mui/material'
 
-const NotesHeader = () => {
+const NotesHeader: FC = () => {
   return (
     <div className="notes-header">
       <Button

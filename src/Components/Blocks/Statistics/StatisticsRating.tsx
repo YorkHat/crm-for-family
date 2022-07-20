@@ -1,4 +1,4 @@
-import {FC} from 'react'
+import { FC } from 'react'
 import Rating from '@mui/material/Rating'
 
 const StatisticsRating: FC = () => {

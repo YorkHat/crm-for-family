@@ -1,4 +1,4 @@
-import {FC} from 'react'
+import { FC } from 'react'
 import YhAvatar from '../../UI/YhAvatar/YhAvatar'
 
 const HomeHeader: FC = () => {

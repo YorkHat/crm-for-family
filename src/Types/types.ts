@@ -1,8 +1,10 @@
-import {Colors} from './enums'
+import { Colors } from './enums'
+import { FC } from 'react'
 
 export interface ISidebarNav {
   id: number
   title: string
+  path: string
 }
 
 export interface IFamilyProfile {
@@ -21,4 +23,9 @@ export interface IStatisticsItem {
   number: number
   title: string
   color: Colors
+}
+
+export interface IRoute {
+  path: string
+  component: FC
 }

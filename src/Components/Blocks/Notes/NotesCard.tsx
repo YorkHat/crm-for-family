@@ -1,6 +1,6 @@
-import {FC} from 'react'
-import {ITask} from '../../../Types/types'
-import {Card, CardContent, Typography} from '@mui/material'
+import { FC } from 'react'
+import { ITask } from '../../../Types/types'
+import { Card, CardContent, Typography } from '@mui/material'
 
 interface NotesCardProps {
   item: ITask

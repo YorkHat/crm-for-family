@@ -1,5 +1,5 @@
-import {FC} from 'react'
-import {ITask} from '../../../Types/types'
+import { FC } from 'react'
+import { ITask } from '../../../Types/types'
 import NotesCard from './NotesCard'
 
 interface NotesItemProps {

@@ -1,8 +1,8 @@
-import {FC, ReactNode} from 'react'
+import { FC, ReactNode } from 'react'
+import { TaskItems } from '../../../Store/stores'
+import { ITask } from '../../../Types/types'
 import ListUl from '../../Util/ListUl'
 import HomeTaskItem from './HomeTaskItem'
-import {TaskItems} from '../../../Store/stores'
-import {ITask} from '../../../Types/types'
 
 interface HomeTaskWrapperProps {
   children: ReactNode

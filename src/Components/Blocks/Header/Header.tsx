@@ -1,4 +1,4 @@
-import {FC} from 'react'
+import { FC } from 'react'
 import HeaderInner from './HeaderInner'
 import Wrapper from '../../Util/Wrapper'
 

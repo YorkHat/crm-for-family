@@ -1,5 +1,5 @@
-import {FC, ReactNode} from 'react'
-import {Colors} from '../../../Types/enums'
+import { FC, ReactNode } from 'react'
+import { Colors } from '../../../Types/enums'
 
 interface CircleProps {
   children: ReactNode
