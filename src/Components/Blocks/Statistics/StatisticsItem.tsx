@@ -1,5 +1,5 @@
-import {FC} from 'react'
-import {IStatisticsItem} from '../../../Types/types'
+import { FC } from 'react'
+import { IStatisticsItem } from '../../../Types/types'
 import Circle from '../../UI/Circle/Circle'
 
 interface StatisticsItemProps {

@@ -1,14 +1,14 @@
-import {FC} from 'react'
+import { FC } from 'react'
 import Header from './Components/Blocks/Header/Header'
 import Sidebar from './Components/Blocks/Sidebar/Sidebar'
-import Home from './Components/Blocks/Home/Home'
+import AppRouter from './Components/Blocks/AppRouter/AppRouter'
 
 const App: FC = () => {
   return (
     <div className="app-wrapper">
       <Header/>
       <Sidebar/>
-      <Home/>
+      <AppRouter/>
     </div>
   )
 }

@@ -1,8 +1,8 @@
-import React from 'react'
+import { FC } from 'react'
 import {Badge} from '@mui/material'
 import NotificationsIcon from '@mui/icons-material/Notifications'
 
-const HeaderProfile = () => {
+const HeaderProfile: FC = () => {
   return (
     <div className="header-profile">
       <Badge

@@ -1,5 +1,5 @@
-import {FC} from 'react'
-import {Avatar} from '@mui/material'
+import { FC } from 'react'
+import { Avatar } from '@mui/material'
 
 interface YhAvatarImageProps {
   avatarWrapperClasses?: string

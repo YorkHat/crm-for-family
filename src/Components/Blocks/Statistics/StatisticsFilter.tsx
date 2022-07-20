@@ -1,4 +1,4 @@
-import {FC} from 'react'
+import { FC } from 'react'
 import Select from '@mui/material/Select'
 import FormControl from '@mui/material/FormControl'
 import MenuItem from '@mui/material/MenuItem'

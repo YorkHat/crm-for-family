@@ -1,12 +1,12 @@
-import {IFamilyProfile, ISidebarNav, IStatisticsItem, ITask} from '../Types/types'
-import {Colors} from '../Types/enums'
+import { IFamilyProfile, ISidebarNav, IStatisticsItem, ITask } from '../Types/types'
+import { Colors } from '../Types/enums'
 
 export const SidebarItems: ISidebarNav[] = [
-  {id: Date.now(), title: 'Главная'},
-  {id: Date.now() + 1, title: 'Профиль семьи'},
-  {id: Date.now() + 2, title: 'Календарь'},
-  {id: Date.now() + 3, title: 'Статистика'},
-  {id: Date.now() + 4, title: 'Заметки'}
+  {id: Date.now(), title: 'Главная', path: '/'},
+  {id: Date.now() + 1, title: 'Профиль семьи', path: '/profile'},
+  {id: Date.now() + 2, title: 'Календарь', path: '/'},
+  {id: Date.now() + 3, title: 'Статистика', path: '/stat'},
+  {id: Date.now() + 4, title: 'Заметки', path: '/notes'}
 ]
 
 export const FamilyItems: IFamilyProfile[] = [

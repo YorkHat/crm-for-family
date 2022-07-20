@@ -1,9 +1,9 @@
-import {FC} from 'react'
-import {ISidebarNav} from '../../../Types/types'
+import { FC } from 'react'
+import { ISidebarNav } from '../../../Types/types'
+import { SidebarItems } from '../../../Store/stores'
 import ListUl from '../../Util/ListUl'
 import SidebarItem from './SidebarItem'
 import YhAvatar from '../../UI/YhAvatar/YhAvatar'
-import {SidebarItems} from '../../../Store/stores'
 
 const Sidebar: FC = () => {
   return (

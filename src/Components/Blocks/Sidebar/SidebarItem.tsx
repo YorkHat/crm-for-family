@@ -1,5 +1,6 @@
-import {FC} from 'react'
-import {ISidebarNav} from '../../../Types/types'
+import { FC } from 'react'
+import { ISidebarNav } from '../../../Types/types'
+import { Link } from 'react-router-dom'
 
 interface SidebarItemProps {
   sidebarItem: ISidebarNav
@@ -8,9 +9,9 @@ interface SidebarItemProps {
 const SidebarItem: FC<SidebarItemProps> = (props) => {
   return (
     <li className="sidebar-item">
-      <a href="#" className="sidebar__link">
+      <Link to={props.sidebarItem.path} className="sidebar__link">
         {props.sidebarItem.title}
-      </a>
+      </Link>
     </li>
   )
 }

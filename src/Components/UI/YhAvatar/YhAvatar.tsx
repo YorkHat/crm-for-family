@@ -1,4 +1,4 @@
-import {FC} from 'react'
+import { FC } from 'react'
 import YhAvatarImage from './YhAvatarImage'
 import YhAvatarTitles from './YhAvatarTitles'
 
