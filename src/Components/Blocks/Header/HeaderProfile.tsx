@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import {Badge} from '@mui/material'
+import { Badge } from '@mui/material'
 import NotificationsIcon from '@mui/icons-material/Notifications'
 
 const HeaderProfile: FC = () => {
@@ -10,9 +10,11 @@ const HeaderProfile: FC = () => {
         color="secondary"
         max={99}
       >
-        <NotificationsIcon sx={{fontSize: 30}}/>
+        <NotificationsIcon className="header-icon"/>
       </Badge>
-      <p>чубр профиль v</p>
+      <p>
+        чубр профиль v
+      </p>
     </div>
   )
 }

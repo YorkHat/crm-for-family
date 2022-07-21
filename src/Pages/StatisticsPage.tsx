@@ -8,6 +8,8 @@ import StatisticsItem from '../Components/Blocks/Statistics/StatisticsItem'
 import StatisticsRating from '../Components/Blocks/Statistics/StatisticsRating'
 
 const StatisticsPage: FC = () => {
+  const renderStatistics = (item: IStatisticsItem) => <StatisticsItem item={item} key={item.id}/>
+
   return (
     <div>
       <Wrapper>
@@ -15,7 +17,7 @@ const StatisticsPage: FC = () => {
         <ListUl
           classNames="stat-list"
           items={StatisticsItems}
-          renderItem={(item: IStatisticsItem) => <StatisticsItem item={item} key={item.id}/>}
+          renderItem={renderStatistics}
         />
         <StatisticsRating/>
       </Wrapper>
