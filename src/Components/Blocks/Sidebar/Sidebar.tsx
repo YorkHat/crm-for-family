@@ -6,6 +6,8 @@ import SidebarItem from './SidebarItem'
 import YhAvatar from '../../UI/YhAvatar/YhAvatar'
 
 const Sidebar: FC = () => {
+  const renderSidebar = (sidebarItem: ISidebarNav) => <SidebarItem sidebarItem={sidebarItem} key={sidebarItem.id}/>
+
   return (
     <nav className="sidebar">
       <YhAvatar
@@ -17,8 +19,7 @@ const Sidebar: FC = () => {
       <ListUl
         classNames="sidebar-list"
         items={SidebarItems}
-        renderItem={(sidebarItem: ISidebarNav) =>
-          <SidebarItem sidebarItem={sidebarItem} key={sidebarItem.id}/>}
+        renderItem={renderSidebar}
       />
     </nav>
   )

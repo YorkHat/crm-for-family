@@ -9,6 +9,8 @@ interface HomeTaskWrapperProps {
 }
 
 const HomeTaskWrapper: FC<HomeTaskWrapperProps> = (props) => {
+  const renderHomeTasks = (task: ITask) => <HomeTaskItem key={task.id} item={task}/>
+
   return (
     <div className="home-tasks">
       <h2 className="home__title">
@@ -16,7 +18,7 @@ const HomeTaskWrapper: FC<HomeTaskWrapperProps> = (props) => {
       </h2>
       <ListUl
         items={TaskItems}
-        renderItem={(task: ITask) => <HomeTaskItem key={task.id} item={task}/>}
+        renderItem={renderHomeTasks}
         classNames="home-list"
       />
     </div>

@@ -5,11 +5,13 @@ import ListUl from '../../Util/ListUl'
 import NotesItem from './NotesItem'
 
 const NotesBody: FC = () => {
+  const renderNotes = (notesItem: ITask) => <NotesItem item={notesItem} key={notesItem.id}/>
+
   return (
     <div className="notes-body">
       <ListUl
         items={TaskItems}
-        renderItem={(notesItem: ITask) => <NotesItem item={notesItem} key={notesItem.id}/>}
+        renderItem={renderNotes}
         classNames="notes-list"
       />
     </div>
