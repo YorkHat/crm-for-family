@@ -2,13 +2,13 @@
 @import "../vendor/variables";
 
 .home {
-  background-color: $color-blue-gray;
   height: 100vh;
   padding: 3rem 0;
 }
 
 .home-header {
   @include flexVerticalCenter();
+  margin-left: 4rem;
 }
 
 .home-profile {
@@ -16,14 +16,14 @@
 }
 
 .home-body {
-  @include justifyFlex(space-between);
+  @include justifyFlex(space-around);
   margin-top: 5rem;
 }
 
 .home-tasks {
-  padding: 0 1.5rem;
-  background-color: $color-lily;
+  background-color: $color-light-gray;
   width: 45%;
+  padding: 3rem;
 }
 
 .home__title {
@@ -37,15 +37,16 @@
 
 .home-item {
   margin: 2rem 0;
-  padding: 1rem;
+  padding: 1rem 2rem;
 
   height: 4rem;
-  background-color: $color-orange-dusty;
+  background-color: $color-blue-gray;
+  border-radius: 20px;
   cursor: pointer;
 
   transition: $common-transition;
 
   &:hover {
-    background-color: $color-eggplant;
+    background-color: $color-lily;
   }
 }
