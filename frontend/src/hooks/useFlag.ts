@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-type UseFlag = [boolean, () => void, () => void];
+export type UseFlag = [boolean, () => void, () => void];
 
 export function useFlag(initialState = false): UseFlag {
   const [flag, setFlag] = useState<boolean>(initialState);
