@@ -1,7 +1,7 @@
 import React from 'react';
 import { SidebarLinkName, SidebarLinkType } from '../../types';
 import clientRoute from '../../clientRoute';
-import { YhSidebarHeader } from './SidebarStyled';
+import { YhSidebarBody } from './SidebarStyled';
 import { generateSidebarLinks } from './generateSidebarLinks';
 
 export const sidebarHeaderLinks: SidebarLinkType[] = [
@@ -29,6 +29,6 @@ export const sidebarHeaderLinks: SidebarLinkType[] = [
 
 const links = generateSidebarLinks(sidebarHeaderLinks);
 
-export const SidebarHeader = (): JSX.Element => {
-  return <YhSidebarHeader>{links}</YhSidebarHeader>;
+export const SidebarBody = (): JSX.Element => {
+  return <YhSidebarBody>{links}</YhSidebarBody>;
 };

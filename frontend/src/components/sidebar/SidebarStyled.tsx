@@ -23,13 +23,13 @@ export const YhSidebarLink = styled(Link)`
   }
 `;
 
-export const YhSidebarHeader = styled.div`
+export const YhSidebarBody = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 5px;
 `;
 
-export const YhHeaderLinks = styled(YhSidebarLink)`
+export const YhBodyLinks = styled(YhSidebarLink)`
   padding: 5px 15px;
 `;
 

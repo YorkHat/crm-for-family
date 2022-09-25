@@ -1,5 +1,5 @@
 import { SidebarLinkType } from '../../types';
-import { YhFooterLinks, YhHeaderLinks } from './SidebarStyled';
+import { YhBodyLinks, YhFooterLinks } from './SidebarStyled';
 import React, { ReactNode } from 'react';
 import { getOrElse } from '../../utils';
 
@@ -9,7 +9,7 @@ export const generateSidebarLinks = (sidebarLinks: SidebarLinkType[], isHeaderLi
 
     return getOrElse(
       isHeaderLink,
-      <YhHeaderLinks to={path}>{name}</YhHeaderLinks>,
+      <YhBodyLinks to={path}>{name}</YhBodyLinks>,
       <YhFooterLinks to={path}>{name}</YhFooterLinks>,
     );
   });
